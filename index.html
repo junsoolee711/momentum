@@ -2,108 +2,117 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <title>Junsoo' homepage</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <title>Junsoo' homepage</title>
 
-    <script src="index.js"></script>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+  <script src="script.js"></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
 
-        * {
-            font-family: 'Poppins', sans-serif;
-        }
+    * {
+      font-family: 'Poppins', sans-serif;
+    }
 
-        body {
-            background-image: url(https://static01.nyt.com/images/2022/08/14/travel/travel-budapest-promo-5/travel-budapest-promo-5-mediumSquareAt3X.jpg);
-            background-position: center;
+    body {
+      background-image: url(https://static01.nyt.com/images/2022/08/14/travel/travel-budapest-promo-5/travel-budapest-promo-5-mediumSquareAt3X.jpg);
+      background-position: center;
 
-            color: white;
-        }
+      color: white;
+    }
 
-        .time {
-            font-size: 5rem;
-            font-weight: bold;
-            text-align: center;
-        }
+    .time {
+      font-size: 5rem;
+      font-weight: bold;
+      text-align: center;
+    }
 
-        .greeting {
-            font-size: 3.2rem;
-            text-align: center;
-        }
+    .greeting {
+      font-size: 3.2rem;
+      text-align: center;
+    }
 
-        .greeting2 {
-            font-size: 3.2rem;
-            text-align: center;
-        }
+    .greeting2 {
+      font-size: 3.2rem;
+      text-align: center;
+    }
 
-        .todo {
-            font-size: 30px;
-            text-align: center;
-            border-style: solid;
-            border-color: white;
-            border-width: 0.2rem;
-            margin-top: 3.1rem;
-        }
+    .todo {
+      font-size: 30px;
+      text-align: center;
+      margin-top: 50px;
+    }
 
-        .author {
-            font-size: 1.6rem;
-            font-style: italic;
-        }
+    .thing {
+      text-align: center;
+      /* border-style: solid; */
+      /* border-color: white; */
+      /* border-width: 0.2rem; */
+    }
 
-        .main {
-            width: 100vw;
-            height: 80vh;
+    .author {
+      font-size: 1.6rem;
+      font-style: italic;
+    }
 
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-        }
+    .main {
+      width: 100vw;
+      height: 80vh;
 
-        .quote {
-            width: 100vw;
-            height: 20vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
 
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-        }
-        
-        @media (max-width:500px) {
-  
+    .quote {
+      width: 100vw;
+      height: 20vh;
 
-  main {
-    background-image: url(https://static01.nyt.com/images/2022/08/14/travel/travel-budapest-promo-5/travel-budapest-promo-5-mediumSquareAt3X.jpg);
-    font-size: 1.25rem;
-  }
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
 
-    </style>
+    li {
+      font-size: 1.5rem;
+      text-align: center;
+    }
 
-    <script>
-    </script>
+    @media (max-width:500px) {
+
+
+      main {
+        background-image: url(https://static01.nyt.com/images/2022/08/14/travel/travel-budapest-promo-5/travel-budapest-promo-5-mediumSquareAt3X.jpg);
+        font-size: 1.25rem;
+      }
+  </style>
+
+  <script>
+  </script>
 </head>
 
 <body>
-    <div class="main">
-        <div id="time" class="time">07:00</div>
-        <div class="greeting">Hello, Junsoo!</div>
-        <div class="greeting2">What's your goal today?</div>
-        <div class="todo">Must To Do
-        <p>ㅇ아침명상</p>
-        <p>ㅇ운동하기</p>
-        <p>ㅇ독서하기</p>
-        </div>
+  <div class="main">
+    <div id="time" class="time">07:00</div>
+    <div class="greeting">Hello, Junsoo!</div>
+    <div class="greeting2">What's your goal today?</div>
+    <div class="todo">Must To Do</div>
+    <div class="thing">
+      <h4>ㅇ침상정리 </h4>
+      <h4>ㅇ아침명상 </h4>
+      <h4>ㅇ운동 </h4>
     </div>
+  </div>
 
-    <div class="quote">
-        <div id="author" class="author">- 명언의 저자 -</div>
-        <div id="content" class="content">" 명언의 내용 "</div>
-    </div>
+  <div class="quote">
+    <div id="author" class="author">- 명언의 저자 -</div>
+    <div id="content" class="content">" 명언의 내용 "</div>
+  </div>
 </body>
 
 </html>
