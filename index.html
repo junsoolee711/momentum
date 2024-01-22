@@ -7,11 +7,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <link href="style.css" rel="stylesheet" type="text/css" />
   <title>Junsoo' homepage</title>
 
-  <script src="index.js"></script>
+  <script src="script.js"></script>
+
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+    @import url('https://fonts.googleapis.com/css2?family=Sunflower:wght@500&display=swap');
 
     * {
       font-family: 'Poppins', sans-serif;
@@ -20,8 +24,17 @@
     body {
       background-image: url(https://static01.nyt.com/images/2022/08/14/travel/travel-budapest-promo-5/travel-budapest-promo-5-mediumSquareAt3X.jpg);
       background-position: center;
-
       color: white;
+    }
+
+    .main {
+      width: 100vw;
+      height: 100vh;
+
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
     }
 
     .time {
@@ -29,6 +42,7 @@
       font-weight: bold;
       text-align: center;
       margin-right: 1.25rem;
+      margin-top: 6rem;
     }
 
     .greeting {
@@ -43,41 +57,45 @@
       margin-right: 2.18rem;
     }
 
+    .contents {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+
     .todo {
       /* font-size: 30px; */
       text-align: center;
-      margin-top: 50px;
+      margin-top: 3.2rem;
+      border-style: solid none solid solid;
+      border-color: white;
+      border-width: 3px;
+      /* padding-left: 1.5rem; */
+      /* padding-right: 1.5rem; */
+      /* margin-right: 2.18rem; */
+    }
+
+    .mind {
+      text-align: center;
+      margin-top: 3.2rem;
+      border-style: solid none solid solid;
+      border-color: white;
+      border-width: 3px;
+    }
+
+    .The2024 {
+      text-align: center;
+      margin-top: 3.2rem;
       border-style: solid;
       border-color: white;
       border-width: 3px;
-      padding-left: 1.5rem;
-      padding-right: 1.5rem;
-      margin-right: 2.18rem;
-    }
-
-    h1 {}
-
-    .thing {
-      text-align: center;
-      /* border-style: solid; */
-      /* border-color: white; */
-      /* border-width: 0.2rem; */
     }
 
     .author {
       font-size: 1.6rem;
       font-style: italic;
+      margin-top: 3.2rem;
     }
 
-    .main {
-      width: 100vw;
-      height: 80vh;
-
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-    }
 
     .quote {
       width: 100vw;
@@ -94,39 +112,90 @@
       text-align: center;
     }
 
-    @media (max-width:500px) {
+    a {
+      color: white;
+      text-decoration: none;
+    }
 
+    @media (max-width:500px) {
 
       main {
         background-image: url(https://static01.nyt.com/images/2022/08/14/travel/travel-budapest-promo-5/travel-budapest-promo-5-mediumSquareAt3X.jpg);
-        font-size: 1.25rem;
+        font-size: 1rem;
+        text-align: center;
+        margin-top: 3.2rem;
+        width: 100vw;
+        height: 100vh;
       }
 
-      .time{
-        margin-top:50px;
+      .time {
+        margin-top: 3.5rem;
+        text-align: center;
+        margin-left: 1.875rem;
+        /*font-size: 3rem;*/
       }
-      .quote{
-        margin-top:50px;
- </style>
+
+      .greeting {
+        text-align: center;
+        margin-left: 1.875rem;
+        font-size: 3rem;
+      }
+
+      .greeting2 {
+        text-align: center;
+        margin-left: 1.875rem;
+        font-size: 3rem;
+      }
+
+      .contents {
+        font-size: 0.7rem;
+        text-align: center;
+        margin-right: 0.5rem;
+        width: 100vw;
+        height: 30vh;
+      }
+
+      .quote {
+
+        text-align: center;
+  </style>
+
+  <script>
+  </script>
 </head>
 
 <body>
   <div class="main">
     <div id="time" class="time">07:00</div>
-    <div class="greeting">Hello, Junsoo!</div>
-    <div class="greeting2">What's your goal today?</div>
-    <div class="todo">
-      <h1>Must To Do</h1>
-      <h4>ㅇ침상정리 </h4>
-      <h4>ㅇ아침명상 </h4>
-      <h4>ㅇ운동 </h4>
-    </div>
-  </div>
+    <div class="greeting"><a href=index.html>Hello, Junsoo!</a></div>
+    <div class="greeting2"><a href=index.html>What's your goal today?</a></div>
+    <div class="contents">
+      <div class="todo">
+        <h1>Priority</h1>
+        <h4>ㅇ앱개발</h4>
+        <h4>ㅇ운동 </h4>
+        <h4>ㅇ데이터 사이언스 </h4>
+      </div>
+      <div class="mind">
+        <h1>Mind</h1>
+        <p></p>
+        <h2>나의 단 하나의 일이 끝날 때까지<br>다른 모든 일들은 잡무에 불과하다!</h2>
+        <h4></h4>
 
-  <div class="quote">
-    <div id="author" class="author">- 명언의 저자 -</div>
-    <div id="content" class="content">" 명언의 내용 "</div>
-  </div>
+      </div>
+      <div class="The2024">
+        <h1>2024</h1>
+        <h4>ㅇ어플 출시 및 스타트업 시작</h4>
+        <h4>ㅇ데이터 사이언스 실전</h4>
+        <h4>ㅇ운동 수준</h4>
+        <h4>ㅇ영어 회화</h4>
+      </div>
+    </div>
+
+    <div class="quote">
+      <div id="author" class="author">- 명언의 저자 -</div>
+      <div id="content" class="content">" 명언의 내용 "</div>
+    </div>
 </body>
 
 </html>
